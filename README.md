@@ -1,4 +1,4 @@
-CCDN Forum README.
+CCDN Message README.
 ==================
 
 
@@ -23,8 +23,9 @@ Dependencies:
 -------------
 
 Download and install the pagerfanta bundle as it is required, 
-ForumBundle will not function without it. Follow the pagerfanta install
-instructions.  
+MessageBundle will not function without it. 
+
+Follow the pagerfanta install instructions.  
 	  
 Installation:
 -------------
@@ -38,19 +39,19 @@ Installation:
 	new CCDNMessage\MessageBundle\CCDNMessageMessageBundle(),    
 
 4) Download and install the pagerfanta bundle as it is required, 
-MessageBundle will not function without it. Follow the pagerfanta install
-instructions.  
+MessageBundle will not function without it. 
+Follow the pagerfanta install instructions.  
 	  
 5) In your app/config/config.yml add:    
 
 	ccdn_message_message:  
-		user:
-			profile_route: cc_profile_show_by_id
-		template:
-			engine: twig
-			theme: CCDNForumForumBundle:Form:fields.html.twig
-		pagination:
-			messages_per_page: 40
+	    user:
+	        profile_route: cc_profile_show_by_id
+	    template:
+	        engine: twig
+	        theme: CCDNMessageMessageBundle:Form:fields.html.twig
+	    folder:
+	        messages_per_page: 40
 	  
 6) In your app/config/routing.yml add:  
 
