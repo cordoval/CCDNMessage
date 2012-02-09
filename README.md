@@ -1,5 +1,5 @@
-CCDN Message README.
-==================
+CCDNMessage Message Bundle(s) README.
+=====================================
 
 
 Notes:  
@@ -19,13 +19,18 @@ Available on github <http://www.github.com/codeconsortium/>
 For the full copyright and license information, please view the LICENSE
 file that was distributed with this source code.
 
+
 Dependencies:
 -------------
 
-PagerFanta
-CCDNComponent BBCodeBundle
-CCDNComponent CrumbTrailBundle
-CCDNComponent CommonBundle
+[PagerFanta](https://github.com/whiteoctober/Pagerfanta)
+
+[CCDNComponent BBCodeBundle](https://github.com/codeconsortium/BBCodeBundle)
+
+[CCDNComponent CrumbTrailBundle](https://github.com/codeconsortium/CrumbTrailBundle)
+
+[CCDNComponent CommonBundle](https://github.com/codeconsortium/CommonBundle)
+
 	  
 Installation:
 -------------
@@ -67,4 +72,4 @@ Installation:
 
 	php app/console assets:install --symlink web/
 
-For more help/support, questions and suggestions visit www.codeconsortium.com
+Then your done, if you need further help/support, have suggestions or want to contribute please join the community at [www.codeconsortium.com](http://www.codeconsortium.com)
