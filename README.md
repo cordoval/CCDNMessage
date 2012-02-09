@@ -22,25 +22,23 @@ file that was distributed with this source code.
 Dependencies:
 -------------
 
-Download and install the pagerfanta bundle as it is required, 
-MessageBundle will not function without it. 
-
-Follow the pagerfanta install instructions.  
+PagerFanta
+CCDNComponent BBCodeBundle
+CCDNComponent CrumbTrailBundle
+CCDNComponent CommonBundle
 	  
 Installation:
 -------------
-    
-1) Create the directory src/CCDNMessage in your Symfony directory.
-  
-2) Add the MessageBundle to CCDNMessage directory.  
 
-3) In your AppKernel.php add the following bundles to the registerBundles method array:  
+1) Download and install the dependencies.
+    
+2) Create the directory src/CCDNMessage in your Symfony directory.
+  
+3) Add the MessageBundle to CCDNMessage directory.  
+
+4) In your AppKernel.php add the following bundles to the registerBundles method array:  
 
 	new CCDNMessage\MessageBundle\CCDNMessageMessageBundle(),    
-
-4) Download and install the pagerfanta bundle as it is required, 
-MessageBundle will not function without it. 
-Follow the pagerfanta install instructions.  
 	  
 5) In your app/config/config.yml add:    
 
@@ -52,7 +50,14 @@ Follow the pagerfanta install instructions.
 	        theme: CCDNMessageMessageBundle:Form:fields.html.twig
 	    folder:
 	        messages_per_page: 40
-	  
+	        layout_templates:
+	            show: CCDNComponentCommonBundle:Layout:layout_body_left.html.twig
+	    message:
+	        layout_templates:
+	            compose: CCDNComponentCommonBundle:Layout:layout_body_left.html.twig
+	            show: CCDNComponentCommonBundle:Layout:layout_body_left.html.twig
+
+
 6) In your app/config/routing.yml add:  
 
 	message:  
@@ -61,3 +66,5 @@ Follow the pagerfanta install instructions.
 7) Symlink assets to your public web directory by running this in the command line:
 
 	php app/console assets:install --symlink web/
+
+For more help/support, questions and suggestions visit www.codeconsortium.com
