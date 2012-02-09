@@ -24,11 +24,8 @@ Dependencies:
 -------------
 
 [PagerFanta](https://github.com/whiteoctober/Pagerfanta)
-
 [CCDNComponent BBCodeBundle](https://github.com/codeconsortium/BBCodeBundle)
-
 [CCDNComponent CrumbTrailBundle](https://github.com/codeconsortium/CrumbTrailBundle)
-
 [CCDNComponent CommonBundle](https://github.com/codeconsortium/CommonBundle)
 
 	  
