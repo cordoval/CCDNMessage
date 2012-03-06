@@ -102,6 +102,8 @@ ccdn_message_message:
         layout_templates:
             compose: CCDNComponentCommonBundle:Layout:layout_body_left.html.twig
             show: CCDNComponentCommonBundle:Layout:layout_body_left.html.twig
+    quotas:
+        max_messages: 10
 
 ccdn_component_attachment:
     user:
